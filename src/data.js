@@ -99,7 +99,7 @@ const featuresSection = {
   ],
 };
 
-const metricsContent = {
+const oneLineContent = {
   text: "We have helped 100+ dietitians to scale their business",
 };
 
@@ -124,11 +124,29 @@ const techIntegrationContent = [
   },
 ];
 
+const metricsContent = {
+  facts: [
+    {
+      number: "35 lakh+",
+      text: "Businesses on the network",
+    },
+    {
+      number: "50 lakh+",
+      text: "Communications sent to Debtors",
+    },
+    {
+      number: "8,00,000 Cr+",
+      text: "Invoices transacted on CredFlow",
+    },
+  ],
+
+};
+
 const secureContent = {
   title: "Your Data is 100% Secure",
   description:
     "We understand you are concerned about your data privacy thats why we have Multi-layer security",
-  icon: "book",
+
   features: [
     {
       title: "End to End Encryption",
@@ -145,6 +163,26 @@ const secureContent = {
 const clientsContent = {
   title: "JOIN 15+ COMPANIES ALREADY USING",
   listOfClients: [
+    {
+      logoURL:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Paytm_Logo_%28standalone%29.svg/2560px-Paytm_Logo_%28standalone%29.svg.png",
+      name: "PayTM",
+    },
+    {
+      logoURL:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Paytm_Logo_%28standalone%29.svg/2560px-Paytm_Logo_%28standalone%29.svg.png",
+      name: "PayTM",
+    },
+    {
+      logoURL:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Paytm_Logo_%28standalone%29.svg/2560px-Paytm_Logo_%28standalone%29.svg.png",
+      name: "PayTM",
+    },
+    {
+      logoURL:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Paytm_Logo_%28standalone%29.svg/2560px-Paytm_Logo_%28standalone%29.svg.png",
+      name: "PayTM",
+    },
     {
       logoURL:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Paytm_Logo_%28standalone%29.svg/2560px-Paytm_Logo_%28standalone%29.svg.png",
@@ -331,8 +369,15 @@ const testimonialsContent = {
   ],
 };
 
+const subscribeContent = {
+  title: "Subscribe to our newsletter",
+  btnText: "Subscribe",
+  inputPlaceholder: "Enter your email",
+};
+
 const footerContent = {
   name: "Appneurons Technologies Pvt. Ltd.",
+  description: "We are a team of 10+ people working on this product.",
   socialLinks: [
     {
       name: "facebook",
@@ -362,11 +407,13 @@ export {
   navLinks,
   homeContent,
   featuresSection,
-  metricsContent,
+  oneLineContent,
   techIntegrationContent,
+  metricsContent,
   secureContent,
   clientsContent,
   testimonialsContent,
   pricingContent,
+  subscribeContent,
   footerContent,
 };

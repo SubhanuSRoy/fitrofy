@@ -4,17 +4,18 @@ import { faqs } from "../../data";
 
 function FAQ() {
   return (
-    <div className="space-y-4 px-16 py-8 bg-white">
+    <div className="space-y-4 px-16 py-12 bg-gradient-to-b from-indigo-500  to-blue-400">
+      <h1 className="text-5xl pb-4 font-bold text-white text-center">FAQs</h1>
       {faqs.map((faq) => {
         return (
           <details className="group rounded-lg bg-blue-50 p-6 [&_summary::-webkit-details-marker]:hidden">
             <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-indigo-500">
-              <h2 className="font-medium ">{faq.question}</h2>
+              <h2 className="font-medium text-xl">{faq.question}</h2>
 
-              <span className="relative h-5 w-5 shrink-0">
+              <span className="relative h-10 w-10 shrink-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0"
+                  className="absolute inset-0 h-10 w-10 opacity-100 group-open:opacity-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -29,7 +30,7 @@ function FAQ() {
 
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100"
+                  className="absolute inset-0 h-10 w-10 opacity-0 group-open:opacity-100"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

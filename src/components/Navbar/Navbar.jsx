@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { navLinks } from "../../data";
 
@@ -6,12 +6,18 @@ import { navLinks } from "../../data";
 import logo from "../../assets/images/logo.png";
 
 function Navbar() {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setNavbarOpen(!navbarOpen);
+  };
+
   return (
     <header className="">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <a className="flex-1 flex items-center gap-2" href="/">
-            <img src={logo} className="h-10 w-10 rounded-full" alt={logo}/>
+            <img src={logo} className="h-10 w-10 rounded-full" alt={logo} />
             <span className="text-indigo-500 text-2xl font-bold">FITROFY</span>
           </a>
 
@@ -42,7 +48,10 @@ function Navbar() {
               </div>
 
               <div className="block md:hidden">
-                <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+                <button
+                  className="rounded  p-2 text-gray-600 transition hover:text-gray-600/75"
+                  onClick={toggleNavbar}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"
@@ -62,6 +71,24 @@ function Navbar() {
             </div>
           </div>
         </div>
+        {navbarOpen && (
+          <div className="w-full bg-white px-8 py-4">
+            <nav aria-label="Global" className="md:hidden block">
+              <ul className="flex flex-col items-center gap-6 text-sm">
+                {navLinks.map((link) => (
+                  <li className="hover:bg-gray-50 rounded-md w-full py-2 px-4 text-center">
+                    <a
+                      className="text-gray-500 transition hover:text-gray-500/75"
+                      href={link.href}
+                    >
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );

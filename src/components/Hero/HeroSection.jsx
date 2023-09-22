@@ -15,7 +15,7 @@ function HeroSection() {
             {homeContent.description}
           </p>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center justify-center md:justify-start gap-4">
             <div className="mt-4 md:mt-8">
               <a
                 href={homeContent.cta[0].href}

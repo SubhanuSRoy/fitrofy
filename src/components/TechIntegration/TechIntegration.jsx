@@ -8,7 +8,12 @@ function TechIntegration() {
   return (
     <div className="bg-white w-full sm:grid sm:grid-cols-2  md:px-24 py-12">
       <img src={integrationIllus} alt="tech intrgation" />
-      <div className="flex flex-col items-center justify-between w-full gap-4">
+      <div className="flex flex-col items-center w-full gap-4">
+        <h1 className="text-5xl mb-4">
+          <span className="text-blue-900 tracking-wide font-bold">
+            Tech Integration
+          </span>
+        </h1>
         {techIntegrationContent.map((item) => {
           return (
             <div className="w-4/5 flex gap-4 bg-white rounded-md  border border-indigo-800 p-8 shadow-xl transition hover:border-indigo-500/90 hover:shadow-indigo-500/20">
