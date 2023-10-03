@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer';
 import HeroSection from './components/Hero/HeroSection';
 import Metrics from './components/Metrics/Metrics';
 import Navbar from './components/Navbar/Navbar';
-import OneLiner from './components/OneLiner/OneLiner';
+
 import Pricing from './components/Pricing/Pricing';
 import Secure from './components/Secure/Secure';
 import TechIntegration from './components/TechIntegration/TechIntegration';
@@ -17,7 +17,7 @@ function App() {
     <div className="bg-gradient-to-b from-white via-purple-100 to-purple-200 min-h-screen max-w-screen">
       <Navbar />
       <HeroSection />
-      <OneLiner />
+      
       <Features />
       <Metrics />
       <TechIntegration />

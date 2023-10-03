@@ -1,13 +1,15 @@
 import React from "react";
 import { homeContent } from "../../data";
 import homeImg from "../../assets/illustrations/homeImg.svg"
+import OneLiner from '../OneLiner/OneLiner';
 
 function HeroSection() {
   return (
-    <section className="overflow-hidden h-screen items-center sm:grid sm:grid-cols-2  md:px-24 py-8">
-      <div className="p-8 md:p-12 lg:px-16 lg:py-24">
+    <div className="">
+    <section className="overflow-hidden items-center  sm:grid sm:grid-cols-2 place-items-center md:px-24">
+      <div className="p-8  lg:px-16">
         <div className="mx-auto max-w-xl text-center sm:text-left">
-          <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
+          <h2 className="text-2xl font-bold text-indigo-700 md:text-3xl">
             {homeContent.title}
           </h2>
 
@@ -39,9 +41,12 @@ function HeroSection() {
       <img
         alt="Fitrofy"
         src={homeImg}
-        className=""
+        className="w-1/2 md:w-5/6 mx-auto md:h-3/4"
       />
+      
     </section>
+    <OneLiner />
+    </div>
   );
 }
 

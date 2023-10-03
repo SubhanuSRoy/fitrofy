@@ -1,5 +1,5 @@
 import React from "react";
-import { footerContent, subscribeContent } from "../../data";
+import { footerContent, navLinks, subscribeContent } from "../../data";
 
 function Footer() {
   return (
@@ -33,7 +33,7 @@ function Footer() {
 
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32 border-t-2 border-indigo-500 pt-12">
           <div className="mx-auto max-w-sm lg:max-w-none">
-            <h1 className="text-center text-xl font-bold text-gray-900 sm:text-3xl">
+            <h1 className="text-center lg:text-left text-xl font-bold text-gray-900 sm:text-3xl">
               {footerContent.name}
             </h1>
             <p className="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
@@ -56,125 +56,37 @@ function Footer() {
                 );
               })}
             </div>
+            <p className="mt-4 text-center text-gray-400 lg:text-left text-sm">
+              {footerContent.copyrightText}
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left">
+          <div className="grid grid-cols-1 gap-8 text-center lg:text-right">
             <div>
-              <strong className="font-medium text-gray-900"> Services </strong>
-
-              <ul className="mt-6 space-y-1">
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    Marketing
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    Graphic Design
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    App Development
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    Web Development
-                  </a>
-                </li>
+      
+              <strong className="font-medium text-gray-900">
+      
+                {footerContent.navLinkTitle}{" "}
+              </strong>
+              <ul className="mt-4 space-y-1">
+                {footerContent.navLinks.map((navLink) => {
+                  return (
+                    <li>
+                      <a
+                        className="text-gray-700 transition hover:text-gray-700/75"
+                        rel="noreferrer"
+                        target="_blank"
+                        href={navLink.href}
+                      >
+                        {navLink.name}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
 
-            <div>
-              <strong className="font-medium text-gray-900"> About </strong>
-
-              <ul className="mt-6 space-y-1">
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    About
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    Careers
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    History
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    Our Team
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <strong className="font-medium text-gray-900"> Support </strong>
-
-              <ul className="mt-6 space-y-1">
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    FAQs
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    Contact
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    Live Chat
-                  </a>
-                </li>
-              </ul>
-            </div>
+            
           </div>
         </div>
       </div>
