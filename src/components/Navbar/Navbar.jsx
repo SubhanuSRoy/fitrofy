@@ -12,6 +12,11 @@ function Navbar() {
     setNavbarOpen(!navbarOpen);
   };
 
+  const scrollTo = (componentID) => {
+    const section = document.querySelector(componentID);
+    section.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+
   return (
     <header className="">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -79,7 +84,7 @@ function Navbar() {
                   <li className="hover:bg-gray-50 rounded-md w-full py-2 px-4 text-center">
                     <a
                       className="text-gray-500 transition hover:text-gray-500/75"
-                      href={link.href}
+                      onClick={() => scrollTo(link.href)}
                     >
                       {link.name}
                     </a>

@@ -3,7 +3,7 @@ import { clientsContent } from "../../data";
 
 function Clients() {
   return (
-    <div className="bg-gradient-to-b from-indigo-500  to-blue-400 py-8 space-y-4">
+    <div className="bg-gradient-to-b from-indigo-500  to-blue-400 py-8 space-y-4"  id="clients">
       <h1 className="text-5xl font-bold text-white text-center pb-4">Our Clients</h1>
       <div className="flex flex-col mx-auto rounded-xl items-center py-8 bg-white justify-center w-3/4 shadow-xl shadow-indigo-500/40  ">
         <h1 className="text-lg text-indigo-600 text-center">

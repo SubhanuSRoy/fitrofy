@@ -21,7 +21,7 @@ function HeroSection() {
             <div className="mt-4 md:mt-8">
               <a
                 href={homeContent.cta[0].href}
-                className="inline-block rounded bg-transparent px-12 py-3 text-sm font-medium text-indigo-700 transition border-2 border-indigo-600 hover:bg-indigo-700 hover:text-white focus:outline-none focus:ring focus:ring-yellow-400"
+                className="inline-block rounded bg-transparent px-4 lg:px-12 py-3 lg:text-xl text-sm font-medium text-indigo-700 transition border-2 border-indigo-600 hover:bg-indigo-700 hover:text-white focus:outline-none focus:ring focus:ring-yellow-400"
               >
                 {homeContent.cta[0].name}
               </a>
@@ -29,7 +29,7 @@ function HeroSection() {
             <div className="mt-4 md:mt-8">
               <a
                 href={homeContent.cta[1].href}
-                className="inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+                className="inline-block rounded bg-indigo-600 px-4 lg:px-12 py-3 lg:text-xl text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-400"
               >
                 {homeContent.cta[1].name}
               </a>

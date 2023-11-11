@@ -8,7 +8,7 @@ function Pricing() {
   const enterprise = pricingContent.plans[2];
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-white pt-12 py-24">
+    <div className="min-h-screen flex justify-center items-center bg-white pt-12 py-24" id="pricing">
       <div className="">
         <div className="text-center font-semibold">
           <p className="py-6 text-xl text-blue-700 font-normal w-full px-8 md:w-full">

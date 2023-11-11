@@ -4,7 +4,7 @@ import { faqs } from "../../data";
 
 function FAQ() {
   return (
-    <div className="space-y-4 px-16 py-12 bg-gradient-to-b from-indigo-500  to-blue-400">
+    <div className="space-y-4 px-16 py-12 bg-gradient-to-b from-indigo-500  to-blue-400"  id="faqs">
       <h1 className="text-5xl pb-4 font-bold text-white text-center">FAQs</h1>
       {faqs.map((faq) => {
         return (

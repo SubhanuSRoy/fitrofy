@@ -49,20 +49,20 @@ const faqs = [
 const navLinks = [
   {
     name: "Features",
-    href: "/features",
+    href: "#features",
   },
   {
     name: "Clients",
-    href: "/clients",
+    href: "#clients",
   },
   {
     name: "Pricing",
-    href: "/pricing",
+    href: "#pricing",
   },
 
   {
     name: "FAQs",
-    href: "/faqs",
+    href: "#faqs",
   },
 ];
 
@@ -366,29 +366,20 @@ const testimonialsContent = {
   title: "What our customers are saying",
   testimonials: [
     {
-      name: "Apoorva (Sr Manager, Traya Health)",
+      name: "Apoorv (Sr Manager, Traya Health)",
       designation: "Sr Manager, Traya Health",
       image:
-        "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+        "https://onboarding.smartdietplanner.com/sarthak/website_images/apoorva-traya.jpeg",
       description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-    },
-
-    {
-      name: "Vaibhav (PM, BeatO)",
-      designation: "Product Manager, BeatO",
-      image:
-        "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
-      description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+        "We've been a loyal customer of Fitrofy for several months, and it has consistently met and exceeded our expectations. The software is not only reliable but also highly scalable. As our business has grown, we've been able to rely on Fitrofy to adapt and support our evolving needs.",
     },
     {
       name: "Kapil (CMO, Infinite Health Studios)",
       designation: "Chief Marketing Officer, Infinite Health Studios",
       image:
-        "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+        "https://onboarding.smartdietplanner.com/sarthak/website_images/ihs-kapil.jpeg",
       description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+        "What sets Fitrofy apart from the rest is their exceptional customer support. The robust features, ease of integration, and data security measures are all top-notch. We've found Fitrofy to be a strategic asset in our B2B operations, and we highly recommend it to others in the industry.",
     },
   ],
 };
@@ -423,7 +414,7 @@ const footerContent = {
     "Copyright 2023 © All rights reserved by “Appneurons Technologies Private Limited”",
   navLinkTitle: "Quick Links",
   navLinks: [
-    { name: "About", href: "https://fitrofy.com/about-us/" },
+    { name: "About Us", href: "https://fitrofy.com/about-us/" },
     { name: "How it works?", href: "https://fitrofy.com/how-it-work/" },
     { name: "Blog", href: "https://fitrofy.com/blog/" },
     {
